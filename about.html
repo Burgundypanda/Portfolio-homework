@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn more about Jakiya and her skills" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,30 +27,35 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/portfolio.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Jakiya</title>
+    <title>About Jakiya Rahman</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <img src="images/logo.png" class="logo d-none d-md-block" alt="" />
-        <img
-          src="images/logo-small.png"
-          class="logo d-block d-md-none"
-          alt=""
-        />
+        <a href="/" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Jakiya logo"
+          />
+          <img
+            src="images/logo-small.png"
+            class="logo d-block d-md-none"
+            alt="Jakiya logo"
+          />
+        </a>
         <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
           <li class="active">
-            <a href="/">Home</a>
+            <a href="/about.html" title="About Jakiya">About</a>
           </li>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/work.html" title="Jakiya's Work">Work</a>
           </li>
           <li>
-            <a href="/work.html">Work</a>
-          </li>
-          <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" title="Contact Jakiya">Contact</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +72,9 @@
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="work.html" class="btn btn-branding">Check my projects</a>
+            <a href="/work.html" class="btn btn-branding" title="Jakiya's Work"
+              >Check my projects</a
+            >
           </div>
         </div>
         <div class="col-lg-6">
@@ -74,10 +83,64 @@
             src="images/jakiya.png"
             width="400"
             height="500"
-            alt=""
+            alt="Jakiya picture"
           />
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Enquiry</h3>
+            <p class="text-muted">Let's work together!</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Jakiya"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a
+            href="mailto:jakiyarahman@gmail.com"
+            class="email-link"
+            title="Email Jakiya"
+            >jakiyarahman@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://instagram.com/Burgundypanda"
+            target="_blank"
+            title="Instagram profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/Burgundypanda"
+            target="_blank"
+            title="Github profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://twitter.com/Burgundypanda"
+            target="_blank"
+            title="Twitter profile"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">
+          👉🏽 This project was coded by Jakiya Rahman and it is
+          <a
+            href="https://github.com/Burgundypanda/Portfolio-homework"
+            target="_blank"
+            >open-sourced</a
+          >.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
