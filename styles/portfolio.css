@@ -1,7 +1,7 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
+  --branding-color: #ffc0ca;
+  --secondary-color: #fee8d2;
+  --heading-font-family: "Playfair Display", sans-serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -64,7 +64,13 @@ p {
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 40px 120px;
+}
+
+.content-container h2 {
+  font-size: 48px;
+  line-height: 130px;
+  margin: 20px;
 }
 
 .content {
@@ -78,6 +84,7 @@ p {
 
 .content h2 {
   font-size: 18px;
+  line-height: 26px;
   font-family: var(--default-font-family);
 }
 
@@ -91,10 +98,18 @@ p {
   font-size: 14px;
 }
 
+.contact-box h3 {
+  line-height: 1.5;
+}
+
+.contact-box p {
+  line-height: 2;
+  margin: 10px;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
-  margin: 20px;
   color: white;
   font-size: 18px;
   line-height: 27px;
@@ -110,12 +125,21 @@ p {
   padding: 15px 30px;
 }
 
+.fas {
+  font-size: 48px;
+}
+
 .project-container {
   padding: 70px 60px;
 }
 
+.profile {
+  max-width: 603px;
+  margin: 0 40px;
+}
+
 .logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 nav {
@@ -130,8 +154,8 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
+  line-height: 52px;
+  margin-left: 22px;
 }
 
 nav a {
@@ -147,8 +171,9 @@ nav li.active a {
 
 .contact-box {
   background-color: var(--secondary-color);
-  padding: 30px 120px;
-  border-radius: 10px;
+  padding: 24px 56px;
+  margin: 0 20px;
+  border-radius: 20px;
 }
 
 footer {
@@ -162,7 +187,7 @@ footer .contact-box {
 }
 
 footer .contact-box p {
-  margin: 0;
+  margin: 10px;
 }
 
 footer .email-link {
@@ -191,15 +216,24 @@ footer .social-links a:hover {
   background-color: var(--branding-color);
 }
 
+.skin-img {
+  max-width: 500px;
+}
+
+.weather-img {
+  max-width: 452px;
+  margin: 0 20px;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 60px;
   }
   h2 {
-    font-size: 44px;
+    font-size: 24px;
   }
   h3 {
     font-size: 24px;
+    text-align: center;
   }
 
   .hero {
@@ -210,9 +244,30 @@ footer .social-links a:hover {
     text-align: center;
   }
 
+  .profile {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .content-container {
+    padding: 0;
+    text-align: center;
+  }
   .content {
     text-align: center;
     padding: 0;
+  }
+
+  .skin-img {
+    max-width: 323px;
+  }
+
+  .weather-img {
+    max-width: 333px;
+  }
+
+  footer .email-link {
+    font-size: 18px;
   }
 
   nav li {
